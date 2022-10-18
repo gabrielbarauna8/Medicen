@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript">
+        Window.onload = function () {
+            document.querySelector(".menuMobile").addEventListener("click", function (){
+                if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                document.querySelector(".menu nav ul").style.display = 'none'
+            } else {
+                document.querySelector(".menu nav ul").style.display = 'flex'
+            }
+            } )
+        } 
+    </script>
     <title>MEDI CENTER</title>
 </head>
 <body>
@@ -15,6 +26,11 @@
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="#">home</a></li>
                         <li><a href="#">home</a></li>
@@ -67,7 +83,7 @@
                                 <div class="news_comments">2</div>
                             </div>
                             <div class="news_thumbnail">
-                                <img src="/assets/img/Marketing-médico.jpg" alt="Marketing-médico">
+                                <img src="/assets/img/Clínico-Médico-scaled.jpg" alt="Marketing-médico">
                             </div>
                             <div class="news_title">
                                 Lorem ipsum dolor si amat velum
@@ -84,7 +100,7 @@
                                 <div class="news_comments">2</div>
                             </div>
                             <div class="news_thumbnail">
-                                <img src="/assets/img/Marketing-médico.jpg" alt="Marketing-médico">
+                                <img src="/assets/img/Clínico-Médico-scaled.jpg" alt="Marketing-médico">
                             </div>
                             <div class="news_title">
                                 Lorem ipsum dolor si amat velum
@@ -201,7 +217,12 @@
                         </div>
                     </div>    
                 </div>
+                <div class="footer_copy">
+                Coyright - Todos os direitos reservados
             </div>
+            </div>
+            
     </footer>
+    
 </body>
 </html>
